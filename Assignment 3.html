@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mask Usage in a COVID-19 USA</title>
+
+	</head>
+	<body>
+	<body style="background-color:#DBF9FC;">	
+		<h1>Data Shows Widely Varying Levels of Mask Usage Throughout the USA</h1>
+		<h3>Patterns indicate masking-up is not a health choice but rather a political one</h3>
+
+		<p>County by county data collected from the prelimary stages of the COVID-19 pandemic in the USA shows remarkable patterns in the willingness to wear a mask. 
+		The effects of the politicalization of this concept by the Trump administration is highly visible in the data collected thus far. Predominantly "Red" states and counties are less likely to always or frequently wear masks.
+		Whereas predominantly "Blue" states and counties are more likely to always or frequently mask up. There are, of course, anamolies to this general trend.  </p>
+
+		<h2>Let's take a look at this data:</h2>
+
+
+	<div id="x"></div>
+
+		<script>
+			var img = document.createElement("img");
+ 
+			img.src = "maskmapUSA.png";
+			var src = document.getElementById("x");
+ 
+			src.appendChild(img);
+			var img = document.createElement("img");
+ 
+			img.src = "key.png";
+			var src = document.getElementById("x");
+ 
+			src.appendChild(img);
+
+		</script>
+
+		<p>Source of this map is <a href="https://www.nytimes.com/interactive/2020/07/17/upshot/coronavirus-face-mask-map.html">NYTimes.com</a>
+		Raw Data cane be accessed from <a href="https://raw.githubusercontent.com/nytimes/covid-19-data/master/mask-use/mask-use-by-county.csv">Mask Usage Raw Data</a></p>  
+
+	<h3>Scroll down and hover on the image for detailed information regarding mask usage in that highlighted geographic location</h3>
+	
+	<div>
+	<div style="text-align:center">
+	<img src="maskmapSLC.png" alt="Salt Lake City,UT"
+		onmouseover="this.src='dataSLC.png';"
+		onmouseout="this.src='maskmapSLC.png';">	
+	<p>Salt Lake City, UT</p>
+	
+	</div>
+	<div>
+
+	<div style="text-align:center">
+	<img src="maskmapNY.png" alt="New York, NY"
+		onmouseover="this.src='dataNY.png';"
+		onmouseout="this.src='maskmapNY.png';">	
+	<p>New York, NY</p>
+	</div>
+	<div>
+
+	<div style="text-align:center">
+	<img src="maskmapSF.png" alt="San Francisco, CA"
+		onmouseover="this.src='dataSF.png';"
+		onmouseout="this.src='maskmapSF.png';">	
+	<p>San Francisco, CA</p>
+	</div>
+	
+</body>
+</html>
